@@ -1,25 +1,20 @@
 /* Dependencies */
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+
+/* Others */
+import { ContextGlobal } from "../Components/utils/global.context";
 
 /* Components */
 import Card from "../Components/Card";
 
-/* Others */
-import { getAllDentists } from "../utils/services";
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Home = () => {
-  const [dentistItems, setDentistItems] = useState([]);
-  useEffect(() => {
-    getAllDentists().then((dentists) => setDentistItems(dentists));
-  }, []);
-
+  const { state } = useContext(ContextGlobal)
   return (
-    <div>
+    <div className={state.theme}>
       <h1>Home</h1>
       <div className="card-grid">
-        {/* Aqui deberias renderizar las cards */}
-        {dentistItems.map((dentist) => (
+        {state.dentists?.map((dentist) => (
           <Card
             key={dentist.id}
             name={dentist.name}
