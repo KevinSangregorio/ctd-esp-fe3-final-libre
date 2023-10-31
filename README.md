@@ -1,4 +1,8 @@
+
 # ctd-fe3-final
+
+## Aclaraciones del alumno
+El repositorio no se llama "ctd-esp-fe3-final" porque ya tengo uno repo creado con dicho nombre, por eso lo creo con el nombre de "ctd-esp-fe3-final-libre" 
 
 Examen Final de Frontend III
 
