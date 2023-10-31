@@ -1,6 +1,3 @@
-// https://jsonplaceholder.typicode.com/users
-// https://jsonplaceholder.typicode.com/users/:id
-
 export const getAllDentists = async () => {
   const url = "https://jsonplaceholder.typicode.com/users";
   const response = await fetch(url);
