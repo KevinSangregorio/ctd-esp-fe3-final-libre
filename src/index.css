@@ -152,3 +152,8 @@ tr:nth-child(even) {
 .detail__container > p {
   width: 300px;
 }
+
+.input {
+  padding: 1rem .8rem;
+  font-size: 1rem;
+}
