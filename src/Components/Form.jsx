@@ -43,7 +43,7 @@ const Form = () => {
   };
 
   return (
-    <div>
+    <div className="form__container">
       <form onSubmit={onSubmit}>
         <Input
           type="text"
